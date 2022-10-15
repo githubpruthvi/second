@@ -1,0 +1,25 @@
+pipeline{
+    agent any
+stages{
+stage('clone'){
+    steps{
+echo "this is sample pipeline code"
+}
+}
+stage('build'){
+    steps{
+echo "build stage"
+}
+}
+stage('testing'){
+    steps{
+echo "test"
+}
+}
+stage('deployment'){
+    steps{
+echo "deploy"
+}
+}
+}
+}
